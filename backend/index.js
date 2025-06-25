@@ -25,8 +25,8 @@ app.use(cors( {
       "http://localhost:5175",
       "http://localhost:5176",
       "http://localhost:3000",
-      "https://pi2payz.com",
-      "https://admin.pi2payz.com",
+      "https://nagodpay.com",
+      "https://admin.nagodpay.com",
       "*",
     ], // Specify the allowed origin
   methods: ["GET", "POST", "PUT", "DELETE","PATCH","OPTIONS"], // Specify allowed methods

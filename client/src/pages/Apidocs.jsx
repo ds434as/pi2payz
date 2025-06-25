@@ -4,13 +4,13 @@ const Apidocs = () => {
   return (
     <section className='p-[10px] md:p-[40px] lg:p-[100px] flex justify-center items-center font-fira bg-gray-50'>
       <div className="p-6 text-sm md:text-base leading-relaxed space-y-4 w-full border-[1px] border-gray-200 shadow-md bg-white">
-        <h1 className="text-2xl font-bold text-center text-gray-800">Pi2Payz Payment API Documentation</h1>
+        <h1 className="text-2xl font-bold text-center text-gray-800">NagodPay Payment API Documentation</h1>
 <section className="prose prose-indigo max-w-none">
   <h2 className="text-2xl font-bold text-gray-800">1. Create Payment (P2P)</h2>
 
 
   <h3 className="text-xl font-semibold mt-6">Endpoint</h3>
-  <p><strong>Post:</strong> <code className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded">https://api.pi2payz.com/api/payment/payment</code></p>
+  <p><strong>Post:</strong> <code className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded">https://api.nagodpay.com/api/payment/payment</code></p>
 <div>
   <h2>Description</h2>
     <p>
@@ -101,7 +101,7 @@ const Apidocs = () => {
     <p className="mt-2 text-sm">
       <strong>POST:</strong>{" "}
       <code className="bg-indigo-100 text-indigo-700 px-2 py-1 rounded font-mono">
-        https://api.pi2payz.com/api/payment/payout
+        https://api.nagodpay.com/api/payment/payout
       </code>
     </p>
   </div>
@@ -511,7 +511,7 @@ const Apidocs = () => {
 
 
   <h3 className="text-xl font-semibold mt-6 mb-2">Endpoint</h3>
-  <p><strong>Post:</strong> <code className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded">https://api.pi2payz.com/api/payment/p2c/bkash/payment</code></p>
+  <p><strong>Post:</strong> <code className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded">https://api.nagodpay.com/api/payment/p2c/bkash/payment</code></p>
 <div className='mt-4'>
   <h2 className="text-xl font-semibold text-gray-700">Description</h2>
     <p className="mt-2 text-gray-700 leading-relaxed mb-[10px]">
@@ -679,10 +679,10 @@ const Apidocs = () => {
           
           <h4 className="font-semibold text-[22px] mb-3">New Endpoint: Execute Payment Callback</h4>
             <h3 className="text-xl font-semibold mt-6 mb-2">Endpoint</h3>
-  <p><strong>Post:</strong> <code className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded">https://api.pi2payz.com/api/payment/p2c/bkash/callback</code></p>
+  <p><strong>Post:</strong> <code className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded">https://api.nagodpay.com/api/payment/p2c/bkash/callback</code></p>
     <h2 className="text-xl font-semibold text-gray-700 mt-4">Description</h2>
           <p className='mt-2'> Bkash server-to-server callback for payment status updates. This endpoint handles payment verification
-      and status synchronization between Bkash, Pi2Payz, and your system.</p>
+      and status synchronization between Bkash, NagodPay, and your system.</p>
 
      <h3 className="text-xl font-semibold mt-6">🛡️ Headers</h3>
   <div className="overflow-x-auto">
@@ -808,7 +808,7 @@ const Apidocs = () => {
   <h3 className="text-xl font-semibold mt-6 mb-2">Flow Diagram</h3>
   <div className="bg-gray-100 p-4 rounded">
     <pre className="text-sm">
-{`1. Fetch transaction status (GET https://api.pi2payz.com/api/user/transaction-status/:transactionId)
+{`1. Fetch transaction status (GET https://api.nagodpay.com/api/user/transaction-status/:transactionId)
    ↓
 2. If successful → Fetch user details (GET /auth/user/:userId)
    ↓
@@ -878,7 +878,7 @@ const Apidocs = () => {
 
   <h3 className="text-xl font-semibold mt-6">API Endpoints Used</h3>
   <div className="space-y-2">
-    <p><strong>GET</strong> <code className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded">https://api.pi2payz.com/api/user/transaction-status/:transactionId</code></p>
+    <p><strong>GET</strong> <code className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded">https://api.nagodpay.com/api/user/transaction-status/:transactionId</code></p>
     <p><strong>GET</strong> <code className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded">/auth/user/:userId</code> (with Authorization header)</p>
     <p><strong>POST</strong> <code className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded">/user/create-transaction</code></p>
   </div>
