@@ -5,7 +5,7 @@ import Dashboard from "../pages/dashboard/Dashboard";
 import Payin from "../pages/payin/Payin";
 import Payout from "../pages/payout/Payout";
 import Payoutapproval from "../pages/payout/Payoutapproval";
-import Prepayment from "../pages/Prepayment/Prepayment";
+import Prepayment from "../pages/prepayment/Prepayment";
 import Prepaymenthistory from "../pages/prepaymenthistory/Prepaymenthistory";
 import Newbalance from "../pages/balance/Newbalance";
 import Salesreport from "../pages/salesreport/Salesreport";
